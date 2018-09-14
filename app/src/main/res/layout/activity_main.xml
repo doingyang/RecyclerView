@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ydy.recyclerview.MainActivity">
+
+    <Button
+        android:id="@+id/btn_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView基本使用" />
+
+    <Button
+        android:id="@+id/btn_hf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView下拉刷新与加载更多" />
+
+    <Button
+        android:id="@+id/btn_flex_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlexBox独立使用" />
+
+    <Button
+        android:id="@+id/btn_flex_box_high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlexBox配合RecyclerView使用" />
+</LinearLayout>

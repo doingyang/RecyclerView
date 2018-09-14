@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ydy.recyclerview.widget.SuperTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stv_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:text="标签内容"
+    android:textSize="14sp"
+    android:textColor="@color/colorPrimary"
+    app:stroke_color="@color/colorPrimary"
+    app:stroke_width="1dp"
+    app:corner="25dp"
+    app:left_top_corner="true"
+    app:right_top_corner="true"
+    app:left_bottom_corner="true"
+    app:right_bottom_corner="true">
+</com.ydy.recyclerview.widget.SuperTextView>

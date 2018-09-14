@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.takwolf.android.aspectratio.AspectRatioLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="1dp"
+    app:arl_heightRatio="1"
+    app:arl_widthRatio="4">
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+</com.takwolf.android.aspectratio.AspectRatioLayout>
