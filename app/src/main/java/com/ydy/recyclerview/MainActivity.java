@@ -10,6 +10,7 @@ import com.ydy.recyclerview.activity.RvRefreshMoreActivity;
 import com.ydy.recyclerview.activity.RvBasicUseActivity;
 import com.ydy.recyclerview.activity.FlexBoxLayoutActivity;
 import com.ydy.recyclerview.activity.FlexBoxNormalActivity;
+import com.ydy.recyclerview.activity.RvSuckTopActivity;
 import com.ydy.recyclerview.manager.AppManager;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnHF;
     private Button mBtnFlexBox;
     private Button mBtnFlexBoxHigh;
+    private Button mBtnRvXiDin;
 
     private List<String> selected = new ArrayList<>();
 
@@ -57,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, FlexBoxLayoutActivity.class);
                 intent.putStringArrayListExtra("selected", (ArrayList<String>) selected);
                 break;
+            case R.id.btn_rv_xidin:
+                intent.setClass(this, RvSuckTopActivity.class);
+                break;
             default:
                 break;
         }
@@ -68,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnHF.setOnClickListener(this);
         mBtnFlexBox.setOnClickListener(this);
         mBtnFlexBoxHigh.setOnClickListener(this);
+        mBtnRvXiDin.setOnClickListener(this);
     }
 
     private void initView() {
@@ -75,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnHF = (Button) findViewById(R.id.btn_hf);
         mBtnFlexBox = (Button) findViewById(R.id.btn_flex_box);
         mBtnFlexBoxHigh = (Button) findViewById(R.id.btn_flex_box_high);
+        mBtnRvXiDin = (Button) findViewById(R.id.btn_rv_xidin);
     }
 
     @Override
